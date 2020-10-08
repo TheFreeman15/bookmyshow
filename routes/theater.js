@@ -3,7 +3,7 @@ const router = express.Router();
 const Theater = require('../models/Theatre')
 
 
-router.post('/theater-add',async (req,res)=>{
+router.post('/theater/add',async (req,res)=>{
          let output = {}
          const th = new Theater(req.body)
          await th.save()

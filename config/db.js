@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const dbURI =process.env.DB_URI
-MongoDB Atlas
+// MongoDB Atlas
 module.exports = () => {
     mongoose.connect(dbURI, {
         useUnifiedTopology: true,
@@ -12,8 +12,10 @@ module.exports = () => {
         .then(() => console.log("Connected to MongoDB"))
         .catch((err) => console.log("Error Connecting to DB"));
 }
+
 // Local Mongo Installation
-module.exports = () => {
+
+//module.exports = () => {
 //     mongoose.connect('mongodb://localhost/bookmyshow', {
 //         useUnifiedTopology: true,
 //         useNewUrlParser: true
