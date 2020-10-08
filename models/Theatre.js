@@ -22,5 +22,5 @@ const theatreSchema = new Schema({
 
 },{timestamps:true});
 
-const Theatre = mongoose.model('Theater',movieSchema);
-module.exports = Theater;
+const Theatre = mongoose.model('Theater',theatreSchema);
+module.exports = Theatre;
