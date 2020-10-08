@@ -67,7 +67,7 @@ router.post('/movies/edit/:movieId',async(req,res)=>{
                output = {message:"Failed"}  
           })
           res.send(output)
-}) 
+}); 
 
 router.post('/movies/delete/:movieId',async(req, res)=>{
      let output = {}
